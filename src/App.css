@@ -1,0 +1,42 @@
+.body {
+  grid-area: body;
+  background-color: lightblue;
+  height: 300px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Sidebar {
+  background-color: orange;
+  grid-area: sidebar;
+  text-align: center;
+  font-size: 30px;
+}
+
+header {
+  grid-area: header;
+  background-color: chartreuse;
+  height: 90px;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: plum;
+  height: 90px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.App {
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-areas:
+    "header  header  header"
+    "sidebar  body body"
+    "footer  footer  footer";
+  background-color: #fff;
+  color: black;
+}
